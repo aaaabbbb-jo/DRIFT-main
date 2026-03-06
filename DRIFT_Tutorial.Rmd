@@ -1,0 +1,36 @@
+---
+title: "DRIFT Tutorial"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=FALSE, message=FALSE,dpi=600)
+```
+
+This is a tutorial about how to use the DRIFT method.
+
+### Packages Loading
+
+If you haven’t install ‘DRIFT-main’ package, please use the following code:
+
+```{r, eval=FALSE}
+library(devtools)
+install_github("aaaabbbb-jo/DRIFT-main")
+```
+
+
+```{r, eval=FALSE}
+library(DRIFT-main)
+```
+
+### Data Generation
+
+In our simulation part, we use function `Generate_data()` for data generation. Here is an example of data generation.
+
+### ITE Estimation
+
+Here we show how to compute ITE estimates using `R-Learner GEO`, `Factorized GEO`, `Obs Maximin`, and our proposed method `DRIFT` `DRIFT_N`, respectively. 
+
+### Performance Evaluation
+
+The performance of each method is evaluated by $ACC_{\min}$ and $Cor_{\min}$.
